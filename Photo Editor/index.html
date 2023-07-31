@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editor </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="image-editor.css">
+    <link rel="icon" href="data:image/png;base64,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">
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light " style="font-size: 25px; font-family: sans-serif; background-color: whitesmoke;">
+
+        <img src="https://img.freepik.com/free-vector/dark-logo-photographers_1057-4419.jpg" width="124" height="45"
+            class="d-inline-block align-top" alt="">
+        Photo Editing Studio
+    </nav>
+    <div id="container">
+        <div class="text_box">
+            <div id="imageEditor">
+                <section id="editorContainer">
+                    <canvas id="editor"></canvas>
+                </section>
+            </div>
+            <section id="toolbar">
+                <button id="upload" class="btn btn-success" title="Upload">Upload</button>
+                <button id="save" class="btn btn-danger" title="Save">Save</button>
+                <br>
+                <br>
+                <button id="flipHor" class="btn btn-info" title="Flip Horizontally">Flip Horizontally</button>
+                <button id="flipVert" class="btn btn-info" title="Flip vertically">Flip vertically</button>
+                <br>
+                <br>
+                <button id="rotateL" class="btn btn-info" title="Rotate left">Rotate Left</button>
+                <button id="rotateR" class="btn btn-info" title="Rotate right">Rotate Right</button>
+                <br>
+                <br>
+                <button id="resize" class="btn btn-info" title="Resize">Resize</button>
+                <button id="greyscale" class="btn btn-info" title="Convert to grayscale">Grayscale</button>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
